@@ -1,0 +1,25 @@
+
+This repository relies on data from the PetFinder.my Adoption Prediction page on Kaggle Website. 
+
+1. Click “Download All” in the lower right page. 
+2. “Join the competition” if prompt pops up
+3. File Name “petfinder-adoption-prediction.zip” (Approx 2 GB)
+4. Move zip file from the downloads folder to the your project directory
+5. Unzip file using computer’s unzip/zip application.
+6. Create new folder named “data” in project directory
+7. Move all files from zipped folder into “data” folder
+
+
+Figure 1 Unzipped data
+
+8. For the projects classification problem with tabular data have at least the following:
+a. train folder
+b. test folder
+c. PetFinder-ColorLabels.csv
+d. BreedLabels.csv
+e. ColorLabels.csv
+f. StateLabels.csv	
+
+
+Figure 2 Final Data in Data folder
+
