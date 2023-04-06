@@ -14,7 +14,8 @@ Real world data was imported from PetFinder.my (via Kaggle). The training datase
 # Business Understanding
 [Malaysian Strays, 2021](https://www.thesundaily.my/local/need-to-address-issue-of-strays-population-EE85305030)<br>
 [Poltical Animals,2021](https://www.scmp.com/week-asia/society/article/2106109/how-malaysias-dogs-became-political-animals) <br>
-[VetFuturist,Unknown](https://vetfuturist.com/stray-animals-malaysia-reality-i-saw-travelling-there-past-months)
+[VetFuturist,Unknown](https://vetfuturist.com/stray-animals-malaysia-reality-i-saw-travelling-there-past-months)<br>
+
 Malaysia's Ministry of Tourism is partnering with the local pet adoption agencies to minmize stray animals in the country. They spend about RM10.3 ($2.3Million) managing pounds and euthanization cost.<br>
 
 The ministry cares about correctly predicting adoptable animals well. The adoptable animals will be prioritized in a shelter or pound. It is not determined what will happen with ther other animals. The Ministry of Tourism has another phase to find the best solutions that utilize the animals and minimizes Euthanasia.
@@ -75,13 +76,14 @@ Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in 
 - SMOTE (random_state=42, sampling_strategy= Minority)
 - XGBClassifier (criterion='entropy',max_depth=6, learning_rate=0.01,n_estimators=120,gamma=3,random_state=42)
 
-***
-![Confusion Matrix](Best Estimator's Classification Matrix](https://github.com/Dmvinedata/Capstone/blob/main/images/ConMatrix.png)
-***
 
-***
-![Plot Matrix](Best Estimator's Plot Curve](https://github.com/Dmvinedata/Capstone/blob/main/images/PR_AUC.png)
-***
+![Confusion Matrix](https://github.com/Dmvinedata/Capstone/blob/main/images/ConMatrix.png)
+
+----
+
+![Plot Matrix](https://github.com/Dmvinedata/Capstone/blob/main/images/PR_AUC.png)
+
+----
 
 **Results Summary**
 - They both have an average of ~13% FP rate from the Confusion Matrix. This is a decreased FP from baseline.
