@@ -11,8 +11,6 @@ Real world data was imported from PetFinder.my (via Kaggle). The training datase
 
 ![Wallstreet Journal GettyImages,Cat&Dog](https://github.com/Dmvinedata/Capstone/blob/main/images/cat_dog.jpeg)
 
-
-
 # Business Understanding
 [Malaysian Strays, 2021](https://www.thesundaily.my/local/need-to-address-issue-of-strays-population-EE85305030)<br>
 [Poltical Animals,2021](https://www.scmp.com/week-asia/society/article/2106109/how-malaysias-dogs-became-political-animals) <br>
@@ -23,7 +21,7 @@ The ministry cares about correctly predicting adoptable animals well. The adopta
 
 **Ministry of Tourism (Main Stakeholder)**
 - Want to understand which animals are the most adoptable. (Phase 1:Current Model)<br>
-- There goal is to improve the safety, attraction of area and soothe political upheival about all the strays.<br>
+- Their goal is to improve the safety, attraction of area and soothe political upheival about all the strays.<br>
 **Adoption Agency (Secondary Stakeholder)**
 - Minimize Euthenasia and maximize holding animals as long as possible
 # Date Understanding
@@ -31,13 +29,13 @@ The ministry cares about correctly predicting adoptable animals well. The adopta
 Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in each of Malaysias states.
 [Kaggle PetFinder, 2018](https://kaggle.com/competitions/petfinder-adoption-prediction)<br>
 
-- **Initial Target Classes:**
+- **Initial Target Classes Distributions:**
     - One Day Adoption: 410
     - One Week Adoption: 3090
     - One Month Adoption: 3259
     - Two/Three Month Adoption: 4037
     - No Adoption: 4197
-- **Modified Target Classes:**
+- **Modified Target Classes Distributions:**
     - Adopted: 10796
     - Not Adopted: 4197
 
@@ -50,8 +48,6 @@ Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in 
 **
 ![Classificaiton Distribution](https://github.com/Dmvinedata/Capstone/blob/main/images/AdoptionDist.png)
 ***
-
-
 
 # Modeling & Evaluation
 
@@ -70,7 +66,10 @@ Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in 
     - XGBoost
     - Randon Forest
     - Neural Net
+
 ## Best Estimator
+
+**XGBoost with GridsearchCV Tuning**
 
 - StandardScaler()
 - SMOTE (random_state=42, sampling_strategy= Minority)
@@ -136,6 +135,7 @@ The top 5 featureswere:
 - License
 - data
 - images
+- reproducibility
 - notebook_capstone.ipynb
 - notebook.capston.pdf
 - presentation_capston.pdf 
