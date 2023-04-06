@@ -4,15 +4,18 @@
 ## Predicting Animal Adoptions with Binary Classification
 ## Data Scientist: Deztany Jackson
 
-I am partnering with Malaysia's Ministry of Tourism to refine their pet adoption process. I used binary classification model predictor and real data from PetFinder.com (via Kaggle). The chosen model is a trainined decision tree with a ~87%  performance accuracy. It will surely help your protect states while making the adoption process more cost and labor efficient.
+I am partnering with Malaysia's Ministry of Tourism to refine their country's pet adoption process. "Will a stray be adopted or not?" is the driving question.  An advanced decision tree model is used as the binary classification model predictor. This model has ~81% (precsion) predicting if a Malaysian stray (cat or dog) will be adopted.  
 
-***
-![Wallstreet Journal,Cat&Dog](https://github.com/Dmvinedata/Capstone/blob/main/images/cat_dog.jpg)
-***
+Real world data was imported from PetFinder.my (via Kaggle). The training dataset had over 11000 entries with about 19 attributes descrbing the animal. It will surely help protect Malaysian states health (locals and tourists) while making the adoption process more cost and labor efficient.
+
+
+![Wallstreet Journal GettyImages,Cat&Dog](https://github.com/Dmvinedata/Capstone/blob/main/images/cat_dog.jpeg)
+
+
 
 # Business Understanding
 [Malaysian Strays, 2021](https://www.thesundaily.my/local/need-to-address-issue-of-strays-population-EE85305030)<br>
-[Poltical Animals,2021](https://www.scmp.com/week-asia/society/article/2106109/how-malaysias-dogs-became-political-animals <br>
+[Poltical Animals,2021](https://www.scmp.com/week-asia/society/article/2106109/how-malaysias-dogs-became-political-animals) <br>
 [VetFuturist,Unknown](https://vetfuturist.com/stray-animals-malaysia-reality-i-saw-travelling-there-past-months)
 Malaysia's Ministry of Tourism is partnering with the local pet adoption agencies to minmize stray animals in the country. They spend about RM10.3 ($2.3Million) managing pounds and euthanization cost.<br>
 
@@ -48,6 +51,8 @@ Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in 
 ![Classificaiton Distribution](https://github.com/Dmvinedata/Capstone/blob/main/images/AdoptionDist.png)
 ***
 
+
+
 # Modeling & Evaluation
 
 ## Model Iteration
@@ -72,11 +77,11 @@ Pet Finder supplied data for about 19,000 adoption entries for dogs and cats in 
 - XGBClassifier (criterion='entropy',max_depth=6, learning_rate=0.01,n_estimators=120,gamma=3,random_state=42)
 
 ***
-[Confusion Matrix](Best Estimator's Classification Matrix](https://github.com/Dmvinedata/Capstone/blob/main/images/ConMatrix.png)
+![Confusion Matrix](Best Estimator's Classification Matrix](https://github.com/Dmvinedata/Capstone/blob/main/images/ConMatrix.png)
 ***
 
 ***
-[Plot Matrix](Best Estimator's Plot Curve](https://github.com/Dmvinedata/Capstone/blob/main/images/PR_AUC.png)
+![Plot Matrix](Best Estimator's Plot Curve](https://github.com/Dmvinedata/Capstone/blob/main/images/PR_AUC.png)
 ***
 
 **Results Summary**
@@ -93,6 +98,8 @@ The top 5 featureswere:
 - Color1
 - PhotoAmt
 - Gender
+
+******
 
 - The top two features are the same as the results from the initial correlation
 - PhotoAmt and Color were initial weakly correlated to the Adoption Speed
@@ -133,6 +140,9 @@ The top 5 featureswere:
 - notebook.capston.pdf
 - presentation_capston.pdf 
 
-![Presentation Link](https://github.com/Dmvinedata/Capstone/blob/main/presentation_capstone.pdf) <br>
+[Presentation Link](https://github.com/Dmvinedata/Capstone/blob/main/presentation_capstone.pdf) <br>
 
-![Jupyter Notebook Link](https://github.com/Dmvinedata/Capstone/blob/main/notebook_capstone.pdf)  <br>
+[Jupyter Notebook Link](https://github.com/Dmvinedata/Capstone/blob/main/notebook_capstone.pdf)  <br>
+
+[Reproducibility Instructions](https://github.com/Dmvinedata/Capstone/tree/main/repoducibility)
+
